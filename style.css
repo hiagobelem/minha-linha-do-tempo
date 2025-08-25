@@ -6,7 +6,7 @@
 
 body {
     padding: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif;
     background: #E5D4ED;
     color: #191716;
     line-height: 1.6;
@@ -30,6 +30,7 @@ header div{
     width: 150px;
     height: 150px;
     background-color: #5941A9;
+    border: 2px solid #191716;
     border-radius: 50%;      
     overflow: hidden;        
 }
@@ -81,8 +82,16 @@ header p {
     left: 50%;
 }
 
+.icon-card{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+}
+
 .content {
-    background: #6D72C3;
+    background: #6d72c3b8;
     padding: 20px;
     border-radius: 10px;
     position: relative;
@@ -141,4 +150,9 @@ footer {
     .card::after {
         left: 15px;
     }
+
+    .icon-card{
+    width: 30px;
+    height: 30px;
+}
 }
