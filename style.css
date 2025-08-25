@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    background: #E5D4ED;
+    color: #191716;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #5941A9;
+    border-radius: 50%;      
+    overflow: hidden;        
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+header h1 {
+    font-size: 2.5rem;
+    color: #000807;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #000807;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: #5941A9;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.card {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.card.left {
+    left: 0;
+}
+
+.card.right {
+    left: 50%;
+}
+
+.content {
+    background: #6D72C3;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 30px;
+    right: -10px;
+    background: #6D72C3;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.card.right::after {
+    left: -10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #191716;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    .timeline::after {
+        left: 20px;
+    }
+
+    .card {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 25px;
+    }
+
+    .card.right {
+        left: 0%;
+    }
+
+    .card.right::after{
+        left: 15px;
+    }
+
+    .card::after {
+        left: 15px;
+    }
+}
