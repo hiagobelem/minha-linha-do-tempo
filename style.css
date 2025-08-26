@@ -97,6 +97,57 @@ header p {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.content:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.icons {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.icon1 {
+    position: relative;
+    animation: float 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.icon2 {
+    position: relative;
+    left: 20px;
+    animation: float 1s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+.icon3 {
+    position: relative;
+    animation: float 1s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+.content:hover .icons {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.card.left .icons {
+  right: -60%;
+  top: 50%;
+  transform: translateY(-50%) translateX(20px);
+}
+
+.card.right .icons {
+  left: -60%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-20px);
+}
+
 .card::after {
     content: "";
     position: absolute;
@@ -117,6 +168,12 @@ footer {
     text-align: center;
     margin-top: 50px;
     color: #191716;
+}
+
+@keyframes float {
+  0%   { top: 0; }
+  50%  { top: -8px; }
+  100% { top: 0; }
 }
 
 @media screen and (max-width: 768px) {
