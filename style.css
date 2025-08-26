@@ -74,11 +74,11 @@ header p {
 }
 
 .card.left {
-    left: 0;
+    left: -1.1%;
 }
 
 .card.right {
-    left: 50%;
+    left: 51.1%;
 }
 
 .icon-card{
@@ -148,20 +148,24 @@ header p {
   transform: translateY(-50%) translateX(-20px);
 }
 
+.card.right .icon2 {
+    left: -20px;
+}
+
 .card::after {
     content: "";
     position: absolute;
     width: 20px;
     height: 20px;
     top: 30px;
-    right: -10px;
+    right: -20px;
     background: #6D72C3;
     border-radius: 50%;
     z-index: 1;
 }
 
 .card.right::after {
-    left: -10px;
+    left: -20px;
 }
 
 footer {
