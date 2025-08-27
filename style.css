@@ -13,11 +13,18 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
-    margin: 50px 0;
+    align-items: center;
+    gap: 2rem;
+    background: #E5D4ED;
+    z-index: 1000;
 }
 
 header div{
@@ -53,7 +60,7 @@ header p {
 .timeline {
     position: relative;
     max-width: 900px;
-    margin: auto;
+    margin: 15rem auto auto auto;
 }
 
 .timeline::after {
@@ -81,14 +88,6 @@ header p {
     left: 51.1%;
 }
 
-.icon-card{
-    position: absolute;
-    top: 25px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
-}
-
 .content {
     background: #6d72c3b8;
     padding: 20px;
@@ -101,6 +100,14 @@ header p {
     transform: scale(1.03);
     transition: transform 0.3s ease;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.icon-card{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
 }
 
 .icons {
