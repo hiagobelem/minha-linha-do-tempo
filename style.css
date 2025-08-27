@@ -187,8 +187,41 @@ footer {
   100% { top: 0; }
 }
 
-@media screen and (max-width: 768px) {
-    header{
+@media (hover: none), (pointer: coarse) {
+  .content,
+  .content:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    body {
+        padding: 25px;
+    }
+
+    header {
+        position: relative;
+        padding: 4rem;
+        height: 10rem;
+        gap: 1rem;
+    }
+
+    .circle {
+        height: auto;
+    }
+
+    .timeline {
+        margin: 2rem auto auto auto;
+    }
+
+    .icons {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -221,5 +254,5 @@ footer {
     .icon-card{
     width: 30px;
     height: 30px;
-}
+    }
 }
