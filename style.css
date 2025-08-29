@@ -6,7 +6,8 @@
 
 body {
     padding: 20px;
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
     background-color: #E5D4ED;
     color: #191716;
     line-height: 1.6;
@@ -44,12 +45,15 @@ header div{
     }
 
 header h1 {
+    font-family: 'Raleway', sans-serif; ;
     font-size: 2.5rem;
     color: #000807;
 }
 
 header p {
+    font-family: 'Quicksand', sans-serif; ;
     font-size: 1.2rem;
+    font-weight: 500;
     color: #000807;
 }
 
@@ -82,6 +86,10 @@ header p {
 
 .card.right {
     left: 51.1%;
+}
+
+.content h3 {
+    font-family: 'Raleway', sans-serif;
 }
 
 .content {
@@ -257,7 +265,7 @@ footer {
     }
 
     .card::after {
-        left: 20px;
+        left: 17px;
     }
 
     .icons {
